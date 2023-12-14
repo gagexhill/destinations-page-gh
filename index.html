@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinations Page</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
+    <header class="container">
         <h1>Vacation Destinations Wishlist</h1>
         <p>
            Found exciting places to visit on your next vacation? Add the form below to add them to you wishlist.
         </p>
     </header>
-    <section>
-        <article>
-            <form>
-                <label for="destination-name">Destination Name: </label>
+    <section class="container">
+        <div class="row">
+            <article class="col-12 col-sm-4">
+            <form id="user_input_form">
+                <label for="destination_name">Destination Name: </label>
                 <input type="text" placeholder="Enter destination name">
 
-                <label for="location-name">Location: </label>
+                <label for="location_name">Location: </label>
                 <input type="text" placeholder="Enter location name">
 
-                <label for="photo-url">Photo: </label>
+                <label for="photo_url">Photo: </label>
                 <input type="text" placeholder="Enter Photo URL">
 
                 <label for="description">Description: </label>
                 <textarea id="description" placeholder="Enter destination description"></textarea>
                 <input type="submit">
             </form>
-        </article>
-        <article>
-            <h3>Enter destination details</h3>
-            <div id="cards-container"></div>
-        </article>
+            </article>
+            <article class="col-12 col-sm-8">
+                <h3 id="cards_container_heading">Enter destination details</h3>
+                <div id="cards_container"></div>
+            </article>
+         </div>
     </section>
 </body>
 </html>
